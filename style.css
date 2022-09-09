@@ -1,0 +1,53 @@
+@import url("style2.css");
+@font-face {
+    font-family: "matterland";
+    src: url("Matterland.ttf");
+}
+
+.wrapper{
+    display: grid;
+}
+.wrapper>div {
+    border: solid 2px black;
+    height: 50px;
+    /* width: 50px; */
+    font-size: xx-large;
+    padding: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+@media(min-width:500px){
+    .wrapper {
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media(min-width:788px){
+    .wrapper {
+        grid-template-columns: repeat(8,auto);
+    }
+}
+@media(min-width:992px){
+    .wrapper {
+        grid-template-columns: repeat(6,auto);
+    }
+}
+@media(max-width:500px){
+    .wrapper {
+        grid-template-columns: repeat(1,auto);
+    }
+}
+
+h1{
+    color: blue;
+}
+h3{
+    color: red;
+}
+h1{
+    color: rgb(138, 21, 138) !important;
+}
+h1{
+    color: black;
+}
